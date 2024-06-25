@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            text-align: center;
+            background: url("assets/fundo-de-simbolos-de-tecnologia-gradiente_23-2149110134.jpg");
+            background-size: cover;
+            color: rgb(255, 255, 255);
+        }
+        body {
+            background-color: rgb(139, 137, 137);;
+        }
+        a {
+            color: white;
+        }
+        h1 {
+            font-size: 70px;
+        }
+        img {
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 20px;
+        }
+        ul {
+            padding: 10px;
+            background: rgba(80, 76, 76, 0.5)
+        }
+        li {
+            display: inline;
+            padding: 0 10px 0 10px;
+        }
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .project {
+            width: 450px;
+        }
+        @media (max-width: 500px) {
+                h1 {
+                    font-size: 36px;
+                    padding: 5px;
+                }
+                li {
+                    padding: 5px;
+                    display: block;
+                }
+            }
+    </style>
     <title>Ingrid Vianna</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Ingrid's Blog</h1>
+        <ul>
+            <li>About Me</li>
+            <li>Best Projects</li>
+            <li>Newest Projets</li>
+        </ul>
+    </header>
+    <article>
+        <h2>Weather project</h2>
+        <img  class="project" src="assets/previsao-tempo.png" alt="foto da previa do site de previsão do tempo">
+        <p> website developed to display the weather forecast based on the city entered. The application reports temperature, weather conditions and humidity.</p>
+        <button>Like</button>
+    </article>
+    <article>
+        <h2>Valentine's Day Project</h2>
+        <img class="project" src="assets/project-valentines.png" alt="foto do projeto">
+        <p> website developed with a text to wedding proposal, a Yes button when clicked open a new browser tab and a escape button (No)</p>
+        <button>Like</button>
+    </article>
+    <article>
+        <h2>Readme Github introduction</h2>
+        <img class="project" src="assets/github-project.png" alt="projeto github">
+        <p> Readme developed to be the github intro with information about what is being studied and all the codes of existing projects.</p>
+        <button>Like</button>
+    </article>
+        <script>
+            $("button").on("click", function() {
+            alert("Clicked!");
+            });
+        </script>
 </body>
 </html>
